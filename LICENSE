@@ -1,0 +1,83 @@
+===============================================================================
+ Project License Summary
+===============================================================================
+
+This repository contains two categories of code and materials:
+
+1. Components derived from or modified versions of
+   "SimpleRecon" by Niantic Spatial, Inc., licensed under the
+   SimpleRecon Non-Commercial License.
+
+2. Original code and additional modules authored by
+   Zhongmiao Yan (GitHub: LeonATP) © 2025,
+   licensed under the
+   Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+Accordingly, the entire repository is licensed for
+**non-commercial research and educational use only.**
+Commercial use of any kind is strictly prohibited.
+
+-------------------------------------------------------------------------------
+ Section A.  Upstream License – Niantic SimpleRecon License (Extract)
+-------------------------------------------------------------------------------
+
+Copyright © Niantic Spatial, Inc. 2022. Patent Pending.  
+All rights reserved.
+
+This Software is licensed under the terms of the SimpleRecon License,
+which permits use, reproduction, and modification **for non-commercial
+research and educational purposes only**.  
+Any redistribution of modified versions must retain this license text
+and clearly indicate all modified files.
+
+For commercial licensing inquiries, contact  
+https://www.nianticspatial.com/partner-with-us
+
+A full copy of the SimpleRecon License is included in  
+`third_party/SimpleRecon_LICENSE.txt`.
+
+-------------------------------------------------------------------------------
+ Section B.  Original Code by Zhongmiao Yan – CC BY-NC 4.0
+-------------------------------------------------------------------------------
+
+Copyright © 2025 Zhongmiao Yan (GitHub: LeonATP).  
+This portion of the work is licensed under the
+Creative Commons Attribution-NonCommercial 4.0 International License.  
+You may copy and redistribute the material in any medium or format,
+and adapt or build upon it, **for non-commercial purposes only**, provided that
+appropriate credit is given to the author and a link to this license is included.
+
+Full license text: https://creativecommons.org/licenses/by-nc/4.0/
+
+-------------------------------------------------------------------------------
+ Section C.  Combined Use Notice
+-------------------------------------------------------------------------------
+
+Because this repository incorporates code covered by the SimpleRecon
+Non-Commercial License, the entire combined work is subject to the
+most restrictive applicable terms — **non-commercial use only**.
+
+By using, reproducing, or distributing this repository, you agree that:
+
+- You will not use the Software or any derivative work for any commercial purpose.  
+- You will retain all copyright and license notices.  
+- You will clearly indicate any modified files.  
+- You understand that Niantic Spatial, Inc. retains ownership of all intellectual
+  property in the SimpleRecon components and may hold pending patents.  
+- Your original contributions remain under CC BY-NC 4.0.
+
+-------------------------------------------------------------------------------
+ Section D.  Disclaimer of Warranty and Liability
+-------------------------------------------------------------------------------
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.  
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+===============================================================================
+ End of License
+===============================================================================
