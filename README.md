@@ -21,16 +21,46 @@ You can download our [pretrained model](https://drive.google.com/file/d/1K3J_Egu
 
 ## Test
 
+The test code supports multiple modes, including a fast mode for quickly evaluating metrics:
 
+    ```bash
+    python test.py --name PANO_MODE \
+            --output_base_path OUTPUT_PATH \
+            --config_file configs/models/pano_model.yaml \
+            --load_weights_from_checkpoint weights/360Recon.ckpt \
+            --data_config configs/data/metterport3d_default_test.yam \
+            --num_workers 1 \
+            --batch_size 1;
+    ```
+    
+   Run with depth prediction outputs and ground-truth depth visualization：
 
-    sys.argv=['test.py', '--name','PANO_MODEL', '--output_base_path', './output/M3D/', '--config_file', 'configs/models/pano_model.yaml', '--load_weights_from_checkpoint', '/home/yzm/Workspace/360Recon/weights/360Recon.ckpt', '--data_config', 'configs/data/metterport3d_default_test.yaml',
-     '--num_workers', '1','--batch_size', '1','--run_fusion','--depth_fuser','ours','--fuse_color','--dump_depth_visualization']
-    
-    
-    
-    sys.argv=['test.py', '--name','PANO_MODEL', '--output_base_path', './output/S2D3D/v16', '--config_file', 'configs/models/pano_model.yaml', '--load_weights_from_checkpoint', '/home/yzm/Workspace/simplerecon_v2/logs/PANO_MODEL/version_122/checkpoints/epoch=17-step=133344.ckpt', '--data_config', 'configs/data/S2D3D_default_test.yaml',
-     '--num_workers', '2','--batch_size', '2','--cache_depth']
-    
+    ```bash
+    python test.py --name PANO_MODE \
+            --output_base_path OUTPUT_PATH \
+            --config_file configs/models/pano_model.yaml \
+            --load_weights_from_checkpoint weights/360Recon.ckpt \
+            --data_config configs/data/metterport3d_default_test.yam \
+            --num_workers 1 \
+            --batch_size 1 \
+            --dump_depth_visualization;
+    ```
+
+Run with both depth prediction and 3D reconstruction mesh outputs：
+
+    ```bash
+    python test.py --name PANO_MODE \
+            --output_base_path OUTPUT_PATH \
+            --config_file configs/models/pano_model.yaml \
+            --load_weights_from_checkpoint weights/360Recon.ckpt \
+            --data_config configs/data/metterport3d_default_test.yam \
+            --num_workers 1 \
+            --batch_size 1 \
+            --run_fusion   \
+            --depth_fuser ours \
+            --fuse_color    \
+            --dump_depth_visualization;
+    ```
 
 ## BibTeX
 
