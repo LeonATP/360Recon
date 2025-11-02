@@ -23,3 +23,24 @@ You can download our [pretrained model](https://drive.google.com/file/d/1K3J_Egu
 
 
 
+    sys.argv=['test.py', '--name','PANO_MODEL', '--output_base_path', './output/M3D/', '--config_file', 'configs/models/pano_model.yaml', '--load_weights_from_checkpoint', '/home/yzm/Workspace/360Recon/weights/360Recon.ckpt', '--data_config', 'configs/data/metterport3d_default_test.yaml',
+     '--num_workers', '1','--batch_size', '1','--run_fusion','--depth_fuser','ours','--fuse_color','--dump_depth_visualization']
+    
+    
+    
+    sys.argv=['test.py', '--name','PANO_MODEL', '--output_base_path', './output/S2D3D/v16', '--config_file', 'configs/models/pano_model.yaml', '--load_weights_from_checkpoint', '/home/yzm/Workspace/simplerecon_v2/logs/PANO_MODEL/version_122/checkpoints/epoch=17-step=133344.ckpt', '--data_config', 'configs/data/S2D3D_default_test.yaml',
+     '--num_workers', '2','--batch_size', '2','--cache_depth']
+    
+
+## BibTeX
+
+Please cite our paper if you find this work useful：
+
+'''
+@article{yan2024360recon,
+  title={360Recon: An accurate reconstruction method based on depth fusion from 360 images},
+  author={Yan, Zhongmiao and Wu, Qi and Xia, Songpengcheng and Deng, Junyuan and Mu, Xiang and Jin, Renbiao and Pei, Ling},
+  journal={arXiv preprint arXiv:2411.19102},
+  year={2024}
+}
+'''
