@@ -36,11 +36,11 @@ You can download our [pretrained model](https://drive.google.com/file/d/1K3J_Egu
 
 Please cite our paper if you find this work useful：
 
-'''
+```
 @article{yan2024360recon,
   title={360Recon: An accurate reconstruction method based on depth fusion from 360 images},
   author={Yan, Zhongmiao and Wu, Qi and Xia, Songpengcheng and Deng, Junyuan and Mu, Xiang and Jin, Renbiao and Pei, Ling},
   journal={arXiv preprint arXiv:2411.19102},
   year={2024}
 }
-'''
+```
