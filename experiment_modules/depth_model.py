@@ -16,7 +16,7 @@ from utils.geometry_utils import NormalGenerator
 from utils.metrics_utils import compute_depth_metrics
 from utils.visualization_utils import colormap_image
 from skimage import exposure
-from MODE.submodule import sphere_feature_extraction
+from spherical_conv.submodule import sphere_feature_extraction
 import matplotlib.pyplot as plt
 logger = logging.getLogger(__name__)
 
