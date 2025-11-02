@@ -9,3 +9,4 @@ weights/*.ckpt
 /media
 /output
 /data_splits
+train.py
