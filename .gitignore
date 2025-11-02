@@ -1,0 +1,11 @@
+*.pyc
+.vscode/
+debug_scripts/
+logs/
+logs
+models/*.ckpt
+weights/*.ckpt
+**__pycache__**
+/media
+/output
+/data_splits

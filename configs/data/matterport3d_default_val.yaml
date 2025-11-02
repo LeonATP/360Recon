@@ -1,0 +1,9 @@
+!!python/object:options.Options
+dataset_path: /home/yzm/dataset/Matterport3D/
+tuple_info_file_location: /home/yzm/Workspace/360Recon/data_splits/Matterport3d/
+dataset_scan_split_file: /home/yzm/Workspace/360Recon/data_splits/Matterport3d/matterport3d_val.txt
+dataset: matterport3d
+mv_tuple_file_suffix: _three_view_deepvmvs.txt
+num_images_in_tuple: 3
+frame_tuple_type: default
+split: val
