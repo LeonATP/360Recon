@@ -9,7 +9,7 @@ from torchvision.ops import FeaturePyramidNetwork
 from torchvision.ops import deform_conv2d
 from modules.layers import BasicBlock
 from utils.generic_utils import upsample
-from MODE.submodule import RegularBasicBlock,SphereBasicBlock 
+from spherical_conv.submodule import RegularBasicBlock,SphereBasicBlock 
 
 
 def double_basic_block(num_ch_in, num_ch_out, num_repeats=2):
