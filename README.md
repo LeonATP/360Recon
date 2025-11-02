@@ -23,44 +23,44 @@ You can download our [pretrained model](https://drive.google.com/file/d/1K3J_Egu
 
 The test code supports multiple modes, including a fast mode for quickly evaluating metrics:
 
-    ```bash
-    python test.py --name PANO_MODE \
-            --output_base_path OUTPUT_PATH \
-            --config_file configs/models/pano_model.yaml \
-            --load_weights_from_checkpoint weights/360Recon.ckpt \
-            --data_config configs/data/metterport3d_default_test.yam \
-            --num_workers 1 \
-            --batch_size 1;
-    ```
+```bash
+python test.py --name PANO_MODE \
+        --output_base_path OUTPUT_PATH \
+        --config_file configs/models/pano_model.yaml \
+        --load_weights_from_checkpoint weights/360Recon.ckpt \
+        --data_config configs/data/metterport3d_default_test.yam \
+        --num_workers 1 \
+        --batch_size 1;
+```
     
    Run with depth prediction outputs and ground-truth depth visualization：
 
-    ```bash
-    python test.py --name PANO_MODE \
-            --output_base_path OUTPUT_PATH \
-            --config_file configs/models/pano_model.yaml \
-            --load_weights_from_checkpoint weights/360Recon.ckpt \
-            --data_config configs/data/metterport3d_default_test.yam \
-            --num_workers 1 \
-            --batch_size 1 \
-            --dump_depth_visualization;
-    ```
+```bash
+python test.py --name PANO_MODE \
+        --output_base_path OUTPUT_PATH \
+        --config_file configs/models/pano_model.yaml \
+        --load_weights_from_checkpoint weights/360Recon.ckpt \
+        --data_config configs/data/metterport3d_default_test.yam \
+        --num_workers 1 \
+        --batch_size 1 \
+        --dump_depth_visualization;
+```
 
 Run with both depth prediction and 3D reconstruction mesh outputs：
 
-    ```bash
-    python test.py --name PANO_MODE \
-            --output_base_path OUTPUT_PATH \
-            --config_file configs/models/pano_model.yaml \
-            --load_weights_from_checkpoint weights/360Recon.ckpt \
-            --data_config configs/data/metterport3d_default_test.yam \
-            --num_workers 1 \
-            --batch_size 1 \
-            --run_fusion   \
-            --depth_fuser ours \
-            --fuse_color    \
-            --dump_depth_visualization;
-    ```
+```bash
+python test.py --name PANO_MODE \
+        --output_base_path OUTPUT_PATH \
+        --config_file configs/models/pano_model.yaml \
+        --load_weights_from_checkpoint weights/360Recon.ckpt \
+        --data_config configs/data/metterport3d_default_test.yam \
+        --num_workers 1 \
+        --batch_size 1 \
+        --run_fusion   \
+        --depth_fuser ours \
+        --fuse_color    \
+        --dump_depth_visualization;
+```
 
 ## BibTeX
 
