@@ -10,7 +10,8 @@ weights/*.ckpt
 /data_splits
 train.py
 data_scripts/
-datasets/
+datasets/OmniScenes_dataset.py
+datasets/S2D3D_dataset.py
 matterport_utils/
 S2D3D_utils/
 test_utils/
