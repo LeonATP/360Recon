@@ -9,7 +9,6 @@ weights/*.ckpt
 /output
 /data_splits
 train.py
-configs/
 data_scripts/
 datasets/
 matterport_utils/
