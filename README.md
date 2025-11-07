@@ -64,8 +64,11 @@ python test.py --name PANO_MODE \
 ## Acknowledgements
 
 We thank the authors of [**SimpleRecon**](https://github.com/nianticlabs/simplerecon) for their clear and well-structured codebase, which greatly helped our framework design.  
+
 We also thank the authors of [**TransformerFusion**](https://github.com/AljazBozic/TransformerFusion) for providing useful evaluation scripts for rapid reconstruction testing.  
+
 The spherical convolution design in [**MODE**](https://github.com/nju-ee/MODE-2022) was an important technical reference for our spherical feature extractor.
+
 Finally, [**SphereSfM**](https://github.com/json87/SphereSfM) made it possible to obtain ERP-format panoramic poses from real-world data for robustness testing.
 
 ## BibTeX
