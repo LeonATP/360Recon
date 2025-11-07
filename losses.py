@@ -131,14 +131,9 @@ class MVDepthLoss(nn.Module):
                                         )
 
         valid_mask_b1hw = proj_src_depths_b1hw < 1.05 * src_depth_sampled_b1hw
-        #!For equirectangular images which has bottom and top edges,we should't use the pixels there.
+
         device = proj_src_depths_b1hw.device
-        '''
-        edge_width = 40 
-        valid_mask_polar_b1hw = torch.ones((1, 1, depth_height, depth_width), dtype=torch.bool,device=device)
-        valid_mask_polar_b1hw[:,:,:edge_width,:]=False
-        valid_mask_polar_b1hw[:,:,-edge_width:,:]=False
-        '''
+
         valid_mask_b1hw = torch.logical_and(valid_mask_b1hw, 
                                                     proj_src_depths_b1hw > 0)
         valid_mask_b1hw = torch.logical_and(valid_mask_b1hw, 
