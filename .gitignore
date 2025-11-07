@@ -16,3 +16,4 @@ matterport_utils/
 S2D3D_utils/
 test_utils/
 visualization_scripts/
+test_backup.py
