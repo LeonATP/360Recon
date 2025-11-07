@@ -6,7 +6,13 @@ logs
 models/*.ckpt
 weights/*.ckpt
 **__pycache__**
-/media
 /output
 /data_splits
 train.py
+configs/
+data_scripts/
+datasets/
+matterport_utils/
+S2D3D_utils/
+test_utils/
+visualization_scripts/
