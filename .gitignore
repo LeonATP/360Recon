@@ -7,8 +7,8 @@ models/*.ckpt
 weights/*.ckpt
 **__pycache__**
 /output
-/data_splits
 train.py
+data_splits_backup/
 data_scripts/
 datasets/OmniScenes_dataset.py
 datasets/S2D3D_dataset.py
@@ -17,3 +17,5 @@ S2D3D_utils/
 test_utils/
 visualization_scripts/
 test_backup.py
+**build/
+*.so

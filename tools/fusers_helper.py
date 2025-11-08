@@ -2,7 +2,6 @@ import numpy as np
 import open3d as o3d
 import torch
 import trimesh
-from datasets.scannet_dataset import ScannetDataset
 from utils.generic_utils import reverse_imagenet_normalize
 
 from tools.tsdf import TSDF, TSDFFuser
@@ -195,11 +194,7 @@ class Open3DFuser(DepthFuser):
 def get_fuser(opts, scan, bounds=None):
     """Returns the depth fuser required. Our fuser doesn't allow for """
 
-    if opts.dataset == "scannet":
-        gt_path = ScannetDataset.get_gt_mesh_path(opts.dataset_path, 
-                                                opts.split, scan)
-    else:
-        gt_path = None
+    gt_path = None
 
     if opts.depth_fuser == "ours":
         if opts.fuse_color:

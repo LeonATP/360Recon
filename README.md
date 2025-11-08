@@ -10,6 +10,11 @@ You can install dependencies with:
 conda env create -f 360Recon_env.yml
 ```
 
+Then you need to compile the Spherical Convolution operator with following bash command:**
+```shell
+cd spherical_conv/basic/spherical_conv && bash ./build.sh && cd ../../../
+```
+
 ## Dataset
 
 We use publicly available [Matterport3D](https://niessner.github.io/Matterport/) and [Stanford2D3D](https://github.com/alexsax/2D-3D-Semantics) datasets, which contain equirectangular images as well as ground-truth depth and mesh data.
