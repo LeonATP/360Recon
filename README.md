@@ -5,12 +5,12 @@ The repo of the paper ["360Recon: An Accurate Reconstruction Method Based on Dep
 
 ## Setup
 
-You can install dependencies with:
+* You can install dependencies with:
 ```shell
 conda env create -f 360Recon_env.yml
 ```
 
-Then you need to compile the Spherical Convolution operator with following bash command:**
+* Then you need to compile the Spherical Convolution operator with following bash command:
 ```shell
 cd spherical_conv/basic/spherical_conv && bash ./build.sh && cd ../../../
 ```
